@@ -22,13 +22,13 @@
         </label>
         <ul class="nav-links">
             <li><a href="index.html" onclick="closeNavbar()">Home</a></li>
-            <li><a href="#about" onclick="closeNavbar()">About</a></li>
-            <li><a href="#services" onclick="closeNavbar()">Services</a></li>
+            <li><a href="#generation-ideas" onclick="closeNavbar()">About</a></li>
+            <li><a href="#categories" onclick="closeNavbar()">Category</a></li>
             <li><a href="#video-gallery" onclick="closeNavbar()">Video Gallery</a></li>
             <li><a href="#photo-gallery" onclick="closeNavbar()">Photo Gallery</a></li>
             <li><a href="#contact" onclick="closeNavbar()">Contact</a></li>
         </ul>
-        <a href="https://wa.me/yourwhatsapplink" class="chat-now">Chat Now</a>
+        <a href="https://wa.me/919878511765" class="chat-now">Chat Now</a>
     </nav>
     
     <script>
@@ -208,18 +208,18 @@
 <section id="home" class="hero">
     <div class="hero-overlay">
         <div class="hero-content">
-            <h1>Welcome to Glow Way Production</h1>
-            <p>Crafting Your Vision into Reality</p>
-            <a href="#about" class="cta-button">Learn More</a>
+            <h1>Welcome to Generation of Ideas</h1>
+            <p>Where Creativity Meets Reality</p>
         </div>
     </div>
 </section>
 
+
 <!-- About Section -->
-<section id="about" class="about">
-    <div class="about-content">
-        <h2>About Us</h2>
-        <p>At Glow Way Production, we transform your creative ideas into extraordinary visual experiences. Our dedicated team brings passion and expertise to every project, ensuring your vision shines through.</p>
+<section id="generation-ideas" class="generation-ideas">
+    <div class="ideas-content">
+        <h2>Generation of Ideas</h2>
+        <p>Welcome to Generation of Ideas, where creativity meets innovation. Our platform is dedicated to cultivating new concepts and bringing them to life. Whether it's brainstorming, problem-solving, or exploring uncharted territory, we fuel the spark that drives your ideas forward.</p>
     </div>
 </section>
 
@@ -228,7 +228,7 @@
 .hero {
     position: relative;
     height: 100vh;
-    color: #fff;
+    color: #ffcc00;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -242,7 +242,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('1636699902-1630587936-1629272801-Be selective while choosing a production company (1).jpg') no-repeat center center/cover;
+    background: url('steptodown.com732410.jpg') no-repeat center center/cover;
     animation: slideBackground 30s linear infinite;
     z-index: 1;
     opacity: 0.8;
@@ -335,9 +335,11 @@
     }
 }
 
-/* About Section */
-.about {
-    background: #fff;
+
+
+.generation-ideas {
+    background: linear-gradient(135deg, #fffacc, #ff6666, #e10101);
+
     padding: 100px 20px;
     margin: 50px 0;
     border-radius: 0;
@@ -347,51 +349,45 @@
     text-align: center;
 }
 
-.about-content {
-    max-width: 1100px;
+.generation-ideas h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.generation-ideas p {
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.6;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.about h2 {
-    font-size: 2.8em;
-    color: #333;
-    margin-bottom: 30px;
-    font-weight: 700;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-}
-
-.about p {
-    font-size: 1.2em;
-    color: #666;
-    line-height: 1.8;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .about h2 {
-        font-size: 2.4em;
-    }
-
-    .about p {
-        font-size: 1.1em;
-    }
-}
-
-@media (max-width: 490px) {
-    .about {
-        padding: 60px 15px;
-        margin: 0;
-        width: 100%;
-    }
-
-    .about h2 {
+    .generation-ideas h2 {
         font-size: 2em;
     }
-
-    .about p {
+    
+    .generation-ideas p {
         font-size: 1em;
     }
 }
+
+@media (max-width: 480px) {
+    .generation-ideas h2 {
+        font-size: 1.8em;
+    }
+
+    .generation-ideas p {
+        font-size: 0.9em;
+    }
+}
+</style>
+
 </style>
     <style>
       
@@ -849,28 +845,545 @@
          }
      }
  </style>
+ <style>
+    .video-gallery {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 50px 20px;
+         background-color: #ffffff;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+         border-radius: 12px;
+         margin: 30px;
+         transition: all 0.3s ease;
+         position: relative;
+     }
  
- <!-- Contact Section -->
- <section id="contact" class="contact">
-     <h2>Contact Us</h2>
-     <div class="contact-wrapper">
-         <form action="#" class="contact-form">
-             <input type="text" placeholder="Name" required>
-             <input type="email" placeholder="Email" required>
-             <input type="text" placeholder="Subject" required>
-             <textarea placeholder="Message" required></textarea>
-             <button type="submit">Send Message</button>
-         </form>
-         <div class="contact-info">
-             <h3>Our Address</h3>
-             <p>1234 Main Street, Anytown, USA</p>
-             <h3>Phone</h3>
-             <p>(123) 456-7890</p>
-             <h3>Email</h3>
-             <p>contact@yourcompany.com</p>
+     .video-gallery h2 {
+         margin-bottom: 20px;
+         font-size: 3.2em;
+         color: #000;
+         font-weight: 700;
+         letter-spacing: 0.5px;
+         text-transform: uppercase;
+         text-align: center;
+         position: relative;
+         padding-bottom: 20px; /* Adds space for the underline */
+     }
+ 
+     .video-gallery h2::before {
+         content: "";
+         position: absolute;
+         left: 50%;
+         bottom: 0;
+         transform: translateX(-50%);
+         width: 80px;
+         height: 4px;
+         background: #ffeb3b;
+         border-radius: 2px;
+     }
+     .gallery-container {
+         display: flex;
+         width: 100%;
+         gap: 30px;
+         transition: all 0.3s ease;
+     }
+ 
+     .video-display {
+         flex: 3;
+         position: relative;
+     }
+ 
+     .video-display .box {
+         padding: 0;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+         border-radius: 12px;
+         overflow: hidden;
+         background: #fff;
+         position: relative;
+     }
+ 
+     .video-display .skeleton {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(90deg, #f4f4f4 25%, #e0e0e0 50%, #f4f4f4 75%);
+         background-size: 200% 100%;
+         animation: skeleton-loading 1.5s infinite;
+         z-index: 1;
+     }
+ 
+     @keyframes skeleton-loading {
+         0% { background-position: 200% 0; }
+         100% { background-position: -200% 0; }
+     }
+ 
+     .video-list {
+         flex: 1.5;
+         box-sizing: border-box;
+         padding: 20px;
+         background: #ffffff;
+         border-radius: 12px;
+         overflow-y: auto;
+         max-height: 455px;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+     }
+ 
+     .video-list h3 {
+         margin-top: 0;
+         margin-bottom: 20px;
+         font-size: 1.7em;
+         text-align: center;
+         color: #000;
+         letter-spacing: 0.5px;
+         text-transform: uppercase;
+         font-weight: 600;
+     }
+ 
+     .video-list ul {
+         list-style-type: none;
+         padding: 0;
+         margin: 0;
+     }
+ 
+     .video-list li {
+         margin-bottom: 20px;
+         background: #f9f9f9;
+         padding: 15px;
+         border-radius: 15px;
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+         transition: transform 0.3s, box-shadow 0.3s;
+         cursor: pointer;
+     }
+ 
+     .video-list li.active {
+         background: #e0e0e0;
+         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+     }
+ 
+     .video-list li:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+         background: #eeeeee;
+     }
+ 
+     .video-list a {
+         display: flex;
+         align-items: center;
+         text-decoration: none;
+         color: #000;
+         width: 100%;
+     }
+ 
+     .video-list img {
+         width: 120px;
+         height: 105px;
+         border-radius: 10px;
+         margin-right: 15px;
+         object-fit: cover;
+         transition: transform 0.3s;
+     }
+ 
+     .video-list img:hover {
+         transform: scale(1.05);
+     }
+ 
+     .video-title {
+         font-size: 1.0em;
+         font-weight: 600;
+         color: #000000;
+         display: flex;
+         align-items: center;
+     }
+ 
+     .video-display iframe {
+         width: 100%;
+         height: 450px;
+         border: none;
+         transition: opacity 0.5s ease-in-out;
+     }
+ 
+     @media (max-width: 760px) {
+         .gallery-container {
+             flex-direction: column-reverse;
+             gap: 20px;
+         }
+ 
+         .video-list {
+             max-width: 100%;
+             border-bottom: 2px solid #e0e0e0;
+             padding-bottom: 20px;
+         }
+ 
+         .video-display iframe {
+             height: 300px;
+         }
+     }
+ 
+     @media (max-width: 490px) {
+     .gallery-container {
+         flex-direction: column;
+         gap: 20px;
+     }
+ 
+     .video-list {
+         order: 2; /* Moves the video list above the video display */
+         max-width: 100%;
+         border-bottom: 2px solid #e0e0e0;
+         padding-bottom: 20px;
+     }
+ 
+     .video-display {
+         order: 1; /* Moves the video display below the video list */
+     }
+ 
+     .video-gallery h2 {
+         font-size: 2.4em;
+     }
+ 
+     .video-display iframe {
+         height: 250px;
+     }
+ 
+     .video-list a {
+         font-size: 1.1em;
+     }
+ }
+ 
+ </style>
+ 
+ <section id="video-gallery" class="video-gallery" aria-labelledby="video-gallery-title">
+     <h2 id="video-gallery-title">Video Gallery</h2>
+     <div class="gallery-container">
+         <div class="video-display">
+             <div class="box">
+                 <!-- Default Video -->
+                 <iframe id="main-video" src="https://www.youtube.com/embed/LS_CVoCdTU0?si=fGwRcf1geLRE-B5j" frameborder="0" allowfullscreen aria-label="Main Video"></iframe>
+                 <div class="skeleton"></div>
+             </div>
+         </div>
+         <div class="video-list" role="list">
+             <h3>Video List</h3>
+             <ul>
+                 <!-- Video List Items -->
+                 <li role="listitem" tabindex="0">
+                     <a href="https://www.youtube.com/embed/LS_CVoCdTU0?si=fGwRcf1geLRE-B5j" data-video="LS_CVoCdTU0">
+                         <img src="https://img.youtube.com/vi/LS_CVoCdTU0/hqdefault.jpg" alt="Beyoncé - Drunk in Love (Explicit) ft. JAY Z" loading="lazy">
+                         <div class="video-title">Beyoncé - Drunk in Love (Explicit) ft. JAY Z</div>
+                     </a>
+                 </li>
+                 <li role="listitem" tabindex="0">
+                     <a href="https://www.youtube.com/embed/N5rYJbSZc9U?si=GYtlmUcPHQC6ZdQy" data-video="N5rYJbSZc9U">
+                         <img src="https://img.youtube.com/vi/N5rYJbSZc9U/hqdefault.jpg" alt="Coldplay - Hymn For The Weekend (Official Video)" loading="lazy">
+                         <div class="video-title">Coldplay - Hymn For The Weekend (Official Video)</div>
+                     </a>
+                 </li>
+                 <li role="listitem" tabindex="0">
+                     <a href="https://www.youtube.com/embed/JKR2wBCn2Pg?si=COAGcajEluoo0Dtb" data-video="JKR2wBCn2Pg">
+                         <img src="https://img.youtube.com/vi/JKR2wBCn2Pg/hqdefault.jpg" alt="Ed Sheeran - Shape of You (Official Music Video)" loading="lazy">
+                         <div class="video-title">Ed Sheeran - Shape of You (Official Music Video)</div>
+                     </a>
+                 </li>
+                 <li role="listitem" tabindex="0">
+                     <a href="https://www.youtube.com/embed/DeKkNKB_QBk?si=4-czcm2DrC8vNFVT" data-video="DeKkNKB_QBk">
+                         <img src="https://img.youtube.com/vi/DeKkNKB_QBk/hqdefault.jpg" alt="Imagine Dragons - Believer (Official Music Video)" loading="lazy">
+                         <div class="video-title">Imagine Dragons - Believer (Official Music Video)</div>
+                     </a>
+                 </li>
+                 <li role="listitem" tabindex="0">
+                     <a href="https://www.youtube.com/embed/9byFgkEm4hU?si=dRHRAKNcUuhlAfhV" data-video="9byFgkEm4hU">
+                         <img src="https://img.youtube.com/vi/9byFgkEm4hU/hqdefault.jpg" alt="Adele - Rolling in the Deep (Official Music Video)" loading="lazy">
+                         <div class="video-title">Adele - Rolling in the Deep (Official Music Video)</div>
+                     </a>
+                 </li>
+             </ul>
          </div>
      </div>
  </section>
+ 
+ 
+ <script>
+     const videoItems = document.querySelectorAll('.video-list li');
+     const iframe = document.getElementById('main-video');
+     const skeleton = document.querySelector('.skeleton');
+ 
+     // Remove the skeleton after the default video loads
+     iframe.onload = () => {
+         skeleton.style.display = 'none';
+     };
+ 
+     videoItems.forEach(item => {
+         item.addEventListener('click', event => {
+             event.preventDefault();
+ 
+             // Remove active class from all items and add to the clicked one
+             videoItems.forEach(link => link.classList.remove('active'));
+             item.classList.add('active');
+ 
+             // Load the new video
+             const videoId = item.querySelector('a').getAttribute('data-video');
+             skeleton.style.display = 'block';
+             iframe.style.opacity = '0';
+             iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+ 
+             iframe.onload = () => {
+                 skeleton.style.display = 'none';
+                 iframe.style.opacity = '1';
+             };
+         });
+ 
+         item.addEventListener('keydown', event => {
+             if (event.key === 'Enter' || event.key === ' ') {
+                 item.click();
+             }
+         });
+     });
+ </script>
+ 
+ <section id="photo-gallery" class="photo-gallery">
+    <h2>Photo Gallery</h2>
+    <div class="photo-wrapper">
+        <div class="photo">
+            <img src="1.jpg" alt="Photo 1">
+        </div>
+        <div class="photo">
+            <img src="2.jpg" alt="Photo 2">
+        </div>
+        <div class="photo">
+            <img src="3.jpg" alt="Photo 3">
+        </div>
+        <div class="photo">
+            <img src="6.jpg" alt="Photo 6"> <!-- Fixed image source -->
+        </div>
+        <div class="photo">
+            <img src="4.jpg" alt="Photo 4">
+        </div>
+        <div class="photo">
+            <img src="5.jpg" alt="Photo 5">
+        </div>
+    </div>
+</section>
+
+<style>
+/* Photo Gallery */
+.photo-gallery {
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.photo-gallery h2 {
+    font-size: 2.5em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.photo-gallery h2::before {
+    content: "";
+    width: 120px;
+    height: 4px;
+    background-color: #ffeb3b;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+/* Photo Wrapper */
+.photo-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Better alignment */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Photo */
+.photo {
+    width: 100%;
+    max-width: 1600px;
+    aspect-ratio: 16 / 10; /* Ensures the 1600x1066 ratio */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+    transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+.photo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .photo-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery h2 {
+        font-size: 1.8em; /* Font-size adjustment for small screens */
+    }
+    
+    .photo-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Further adjustment for smaller devices */
+    }
+}
+</style>
+
+
+<style>
+    /* Contact Section */
+    .contact {
+        padding: 60px 15px;
+        background-color: #f8f9fa;
+        color: #333;
+        text-align: center;
+        position: relative;
+    }
+
+    .contact h2 {
+        margin-bottom: 40px;
+        font-size: 2.5em;
+        color: #2c3e50;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .contact h2::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: #ffeb3b;
+        border-radius: 2px;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .contact-info {
+        flex: 1;
+        min-width: 300px;
+        max-width: 600px;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        border: 1px solid #dee2e6;
+    }
+
+    .contact-info h3 {
+        margin-top: 20px;
+        font-size: 1.4em;
+        color: #2c3e50;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .contact-info p {
+        margin: 10px 0;
+        font-size: 1em;
+        color: #495057;
+    }
+
+    /* Responsive Design for 768px */
+    @media (max-width: 768px) {
+        .contact h2 {
+            font-size: 2.2em;
+            margin-bottom: 35px;
+        }
+
+        .contact-wrapper {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-info {
+            padding: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            font-size: 1.3em;
+        }
+
+        .contact-info p {
+            font-size: 0.9em;
+        }
+    }
+
+    /* Responsive Design for 490px */
+    @media (max-width: 490px) {
+        .contact h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .contact-wrapper {
+            gap: 15px;
+        }
+
+        .contact-info {
+            padding: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            font-size: 1.2em;
+        }
+
+        .contact-info p {
+            font-size: 0.9em;
+        }
+    }
+</style>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-wrapper">
+        <!-- Google Form Embedded -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2_irTP5wexudulUnw4l-Efr3XA2LKbAELk5RyPYbmFL-sNA/viewform?embedded=true" width="640" height="350" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+        <div class="contact-info">
+            <h3>Our Address</h3>
+            <p>2nd Floor, Md Complex, Sco-219, Chandigarh Rd, near Parkash Dhaba, Guru Arjan Dev Nagar, Ludhiana, Punjab 141015</p>
+            <h3>Phone</h3>
+            <p>+91 98785 11765</p>
+            <h3>Email</h3>
+            <p>rg821151@gmail.com</p>
+        </div>
+    </div>
+</section>
  <style>
      /* Footer Styles */
      footer {
@@ -976,25 +1489,22 @@
  <footer>
      <div class="footer-container">
          <div class="footer-logo">
-             <img src="Logo(1).png" alt="Logo"> <!-- Replace with your logo image -->
+             <img src="gen.png" alt="Logo"> <!-- Replace with your logo image -->
          </div>
          <div class="footer-links">
-             <a href="#">Home</a>
-             <a href="#">About Us</a>
-             <a href="#">Services</a>
-             <a href="#">Contact</a>
+             <a href="index.html">Home</a>
+             <a href="#generation-ideas">About Us</a>
+             <a href="#categories">Category</a>
+             <a href="#contact">Contact</a>
          </div>
          <div class="footer-socials">
-             <a href="https://wa.me/" target="_blank">
+             <a href="https://wa.me/919878511765" target="_blank">
                  <img src="png-clipart-whats-app-logo-whatsapp-logo-whatsapp-cdr-leaf-thumbnail-removebg-preview.png" alt="WhatsApp"> <!-- Replace with your WhatsApp icon image -->
              </a>
-             <a href="https://instagram.com" target="_blank">
+             <a href="https://www.instagram.com/reel/DAR-pkmPTIW/?igsh=OTh1MGNvemJpNDNj" target="_blank">
                  <img src="png-transparent-social-media-instagram-login-graphy-ig-instagram-icon-rectangle-magenta-mobile-phones-thumbnail-removebg-preview.png" alt="Instagram"> <!-- Replace with your Instagram icon image -->
              </a>
-             <a href="https://facebook.com" target="_blank">
-                 <img src="Facebook_Logo_2023-removebg-preview.png" alt="Facebook"> <!-- Replace with your Facebook icon image -->
-             </a>
-             <a href="https://youtube.com" target="_blank">
+             <a href="https://youtube.com/@generationofidealsrealityshow?si=qBDQIfR_3tVAn7ql" target="_blank">
                  <img src="sm_5aeee5973210e-removebg-preview.png" alt="YouTube"> <!-- Replace with your YouTube icon image -->
              </a>
          </div>
