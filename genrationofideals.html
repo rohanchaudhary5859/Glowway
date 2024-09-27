@@ -181,17 +181,17 @@
     /* Additional Responsive Styling for 490px and below */
     @media (max-width: 490px) {
         nav {
-            padding: 8px 15px;
+           padding: 8px 15px;
         }
     
         .logo img {
-            max-height: 40px;
+            max-height: 60px;
         }
     
         .nav-links {
             width: 100%;
+            margin-top: 20px;
             text-align: center;
-            margin: 0;
             padding: 0;
         }
     
@@ -1263,15 +1263,34 @@
 </style>
 
 <style>
-    /* Contact Section */
-    .contact {
-        padding: 60px 15px;
-        background-color: #f8f9fa;
-        color: #333;
-        text-align: center;
-        position: relative;
-    }
+ /* Contact Section */
+.contact {
+    padding: 40px 10px; /* Reduced padding for smaller screens */
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
 
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+}
     .contact h2 {
         margin-bottom: 40px;
         font-size: 2.5em;
@@ -1294,25 +1313,6 @@
         border-radius: 2px;
     }
 
-    .contact-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .contact-info {
-        flex: 1;
-        min-width: 300px;
-        max-width: 600px;
-        background: #ffffff;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-        border: 1px solid #dee2e6;
-    }
 
     .contact-info h3 {
         margin-top: 20px;
@@ -1356,39 +1356,33 @@
 
     /* Responsive Design for 490px */
     @media (max-width: 490px) {
-        .contact {
-            padding: 40px 10px; /* Adjust padding for smaller screens */
-        }
-
-        .contact h2 {
-            font-size: 2em;
-            margin-bottom: 30px;
-        }
-
-        .contact-wrapper {
-            gap: 15px;
-        }
-
-        .contact-info {
-            padding: 15px;
-            width: 100%; /* Make the contact info take full width */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-info h3 {
-            font-size: 1.2em;
-        }
-
-        .contact-info p {
-            font-size: 0.9em;
-        }
-
-        iframe {
-            width: 100%; /* Make the iframe responsive */
-            height: 300px; /* Adjust height for better fit */
-            border: none; /* Remove border for a cleaner look */
-        }
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: center; /* Align the items centrally */
+        gap: 15px;
     }
+
+    .contact-info {
+        padding: 15px;
+        width: 90%; /* Adjusted to 90% to give better spacing on the sides */
+        margin: 0 auto; /* Centers the box */
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info h3 {
+        font-size: 1.2em;
+    }
+
+    .contact-info p {
+        font-size: 0.9em;
+    }
+
+    iframe {
+        width: 100%; /* Make the iframe responsive */
+        height: 300px; /* Adjust height for better fit */
+        border: none; /* Remove border for a cleaner look */
+    }
+}
 </style>
 
 
