@@ -1262,7 +1262,6 @@
 }
 </style>
 
-
 <style>
     /* Contact Section */
     .contact {
@@ -1357,6 +1356,10 @@
 
     /* Responsive Design for 490px */
     @media (max-width: 490px) {
+        .contact {
+            padding: 40px 10px; /* Adjust padding for smaller screens */
+        }
+
         .contact h2 {
             font-size: 2em;
             margin-bottom: 30px;
@@ -1368,6 +1371,7 @@
 
         .contact-info {
             padding: 15px;
+            width: 100%; /* Make the contact info take full width */
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
 
@@ -1378,8 +1382,15 @@
         .contact-info p {
             font-size: 0.9em;
         }
+
+        iframe {
+            width: 100%; /* Make the iframe responsive */
+            height: 300px; /* Adjust height for better fit */
+            border: none; /* Remove border for a cleaner look */
+        }
     }
 </style>
+
 
 <!-- Contact Section -->
 <section id="contact" class="contact">
