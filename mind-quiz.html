@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind Quiz</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Coming Soon</h1>
+    <p>Our website is under construction. We’ll be here soon with our new awesome site!</p>
+    <div id="countdown">
+      <div class="time-box">
+        <span id="days"></span>
+        <span class="label">Days</span>
+      </div>
+      <div class="time-box">
+        <span id="hours"></span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="time-box">
+        <span id="minutes"></span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="time-box">
+        <span id="seconds"></span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <button onclick="goHome()">Go Back Home</button>
+    <footer>
+      <p>&copy; 2024 Glow Way Production</p>
+    </footer>
+  </div>
+ <style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #000000, #470101);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 1800px;
+  width: 100%;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 0.8rem;
+  margin-bottom: 40px;
+  color: #ddd;
+  line-height: 1.0;
+}
+
+#countdown {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 15px;
+  border-radius: 10px;
+  width: 45%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+#countdown span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.label {
+  font-size: 1rem;
+  color: #ddd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+@media (max-width: 490px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  #countdown {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .time-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #countdown span {
+    font-size: 1.5rem;
+  }
+}
+
+ </style>
+ <script>
+    // Set the launch date
+const launchDate = new Date("December 31, 2024 23:59:59").getTime();
+
+const countdown = setInterval(() => {
+  const now = new Date().getTime();
+  const timeLeft = launchDate - now;
+
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 300));
+  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours;
+  document.getElementById("minutes").innerText = minutes;
+  document.getElementById("seconds").innerText = seconds;
+
+  if (timeLeft < 0) {
+    clearInterval(countdown);
+    document.getElementById("countdown").innerHTML = "We are now live!";
+  }
+}, 1000);
+
+function goHome() {
+  window.location.href = "index.html"; // Replace with your homepage URL
+}
+
+ </script>
+</body>
+</html>
